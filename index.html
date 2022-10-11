@@ -1,0 +1,62 @@
+<html>
+    <head>
+       <title>My Selfie App</title>
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+<link href="style.css" rel="stylesheet">
+
+</head>
+ 
+<body>
+<center>
+        <h1 class="main_head">Collage Web App</h1>
+        <hr width="80%" id="main">
+        <br>
+        <br>
+        <h4>As soon as the popup appears, please click Allow. After you've spoken a command</h4>
+
+        <h3> Say "Selfie" for taking your selfies and making a collage</h3>
+
+        <button onclick="start();" class="btn btn-primary">Start</button>
+        <h4>Click On The Start Button</h4>
+
+        <br>
+        <label>Your webcam:</label>
+        <div id="camera"></div>
+
+        <br>
+        <label>All selfies be displayed here:</label>
+        <!-- <div id="resultShow ">
+            <div id="t"> <span> <img id="result1" src="download.jfif">
+
+                    <img id="result2" src="images (1).jfif"> </span>
+            </div>
+
+
+            <div id="resultd"><img id="result3" src="images (2).jfif"></div>
+        </div> -->
+        <div id="resultRow">
+            <div id="result1" class="column">
+                <img id="show1" src="download.jfif">
+            </div>
+
+            <div id="result2" class="column">
+                <img id="show2" src="images (1).jfif">
+            </div>
+
+            <div id="result3" class="column">
+                <img id="show3" src="images (2).jfif">
+            </div>
+        </div>
+
+        <div class="copy_right_footer">Developed by - Din Aaqil Farash</div>
+
+    </center>
+
+    <script src="main.js"></script>
+</body>
+</html>
